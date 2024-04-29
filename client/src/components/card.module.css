@@ -1,0 +1,118 @@
+.container{
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+}
+
+.container:hover .span1 {
+    animation: animate 0.5s linear infinite;
+    visibility: visible;
+}
+
+.container:hover .span2{
+    animation: animate2 0.5s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.container:hover .span3{
+    animation: animate3 0.5s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.container:hover .span4{
+    animation: animate4 0.5s linear infinite;
+    animation-delay: 0.75s;
+}
+
+
+.imagen{
+    max-width: 100%;
+}
+
+.span1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--color-primario));
+    visibility: hidden;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.span2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--color-primario));
+    opacity: 0;
+}
+
+@keyframes animate2{
+    
+    0%{
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(100%);
+    }
+}
+
+.span3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, var(--color-primario));
+    opacity: 0;
+}
+
+@keyframes animate3{
+    0%{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+}
+
+.span4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--color-primario));
+    opacity: 0;
+}
+
+@keyframes animate4{
+    0%{
+        opacity: 1;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+}
+

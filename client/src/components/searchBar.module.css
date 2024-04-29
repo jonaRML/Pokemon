@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.containerLink{
+    display: flex;
+    gap: 20px;
+
+}
+
+.containerInput{
+    position: relative;
+    display: inline-block;
+} 
+
+.input{
+    font-size: large;
+    padding: 4px 30px 4px 4px;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 1rem #00D8FF,
+                0 0 0.8rem #00D8FF,
+                0 0 2.8rem #00D8FF,
+                inset 0 0 1.3rem #00D8FF;
+    border : none;
+    border: 2px solid #d4d4d4;
+    border-radius: 4px;
+
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    
+}
+
+
+.input:focus{
+    outline: none;
+    caret-color: #00D8FF;
+    border: 2px solid #00D8FF;
+    border-radius: 4px;
+
+}
